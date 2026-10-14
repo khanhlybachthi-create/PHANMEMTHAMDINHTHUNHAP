@@ -116,7 +116,7 @@ if st.button("🔍 TÍNH CHỈ SỐ DTI", use_container_width=True):
         st.progress(min(DTI, 1.0))
 
         # Kết luận theo yêu cầu
-        if DTI < 0.70:
+        if DTI > 0.70:
             st.success("✅ KẾT LUẬN: KHÔNG ĐƯỢC VAY")
             st.write("DTI nhỏ hơn 70%.")
 
